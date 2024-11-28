@@ -43,7 +43,7 @@ const httpServer =http.createServer(mentorServer)
 // set up socket.io server
 const io= new Server(httpServer,{
     cors:{
-        origin:"http://localhost:5173",
+        origin:"https://mentor-hub-frontend-alpha.vercel.app",
         methods:["GET","POST"]
     }
 })
